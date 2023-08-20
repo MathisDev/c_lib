@@ -6,7 +6,7 @@
 #    By: mamottet <mamottet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/11 13:06:31 by mamottet          #+#    #+#              #
-#    Updated: 2023/04/21 20:16:58 by Onizukkka        ###   ########.fr        #
+#    Updated: 2023/08/20 09:14:55 by mamottet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,6 +57,8 @@ SRC =	ft_atoi.c \
 	printf/ft_numbers.c \
 	printf/ft_printf.c \
 	printf/ft_words.c \
+	gnl/get_next_line.c \
+	gnl/get_next_line_utils.c
 
 
 SRCO	= $(SRC:.c=.o)
