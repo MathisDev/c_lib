@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   list.h                                             :+:      :+:    :+:   */
+/*   show_list.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamottet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/21 11:28:40 by mamottet          #+#    #+#             */
-/*   Updated: 2023/08/21 16:13:53 by mamottet         ###   ########.fr       */
+/*   Created: 2023/08/21 11:24:32 by mamottet          #+#    #+#             */
+/*   Updated: 2023/08/21 11:37:03 by mamottet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "list.h"
 
-# include "../libft.h"
-
-typedef struct element element;
-struct	element
+void	show_list(llist liste)
 {
-	int val;
-	struct element *nxt;
-};
-typedef element* llist;
-
-llist	add_end_list(llist liste, int valeur);
-int	empty_list(llist liste);
-llist	search_list(llist liste, int valeur);
-void	show_list(llist liste);
-
+	element *tmp = NULL;
+	
+	element *tmp = liste;
+	while(tmp != NULL)
+	{
+		ft_printf("%d ", tmp->val);
+		/* On avance d'une case */
+		tmp = tmp->nxt;
+	}
+}

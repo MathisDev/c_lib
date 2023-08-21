@@ -6,7 +6,7 @@
 #    By: mamottet <mamottet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/11 13:06:31 by mamottet          #+#    #+#              #
-#    Updated: 2023/08/21 11:49:13 by mamottet         ###   ########.fr        #
+#    Updated: 2023/08/21 16:14:39 by mamottet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,8 +60,9 @@ SRC =	ft_atoi.c \
 	gnl/get_next_line.c \
 	gnl/get_next_line_utils.c \
 	list/show_list.c \
-	list/add_end_list.c
-
+	list/add_end_list.c \
+	list/search_list.c \
+	list/show_list.c
 SRCO	= $(SRC:.c=.o)
 
 NAME	= lib.a
